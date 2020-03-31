@@ -1,24 +1,24 @@
-  // const right = document.querySelector("#right");
-  // const left = document.querySelector("#left");
-  // const sliderList = document.querySelector("#sliderList");
-  // const sliderItem = document.querySelector(".slider__item");
+  const right = document.querySelector("#right");
+  const left = document.querySelector("#left");
+  const sliderList = document.querySelector("#sliderList");
+  const sliderItem = document.querySelector(".slider__item");
   
-  // right.addEventListener("click", function(e) {
-  //     loop("right", e);
-  //   });
+  right.addEventListener("click", function(e) {
+      loop("right", e);
+    });
      
-  //   left.addEventListener("click", function(e) {
-  //     loop("left", e);
-  //   });
+    left.addEventListener("click", function(e) {
+      loop("left", e);
+    });
   
-  //   function loop(direction, e) {
-  //     e.preventDefault();
-  //     if (direction === "right") {
-  //           sliderList.appendChild(sliderList.firstElementChild);
-  //     } else {
-  //         sliderList.insertBefore(sliderList.lastElementChild, sliderList.firstElementChild);
-  //     }
-  //   }
+    function loop(direction, e) {
+      e.preventDefault();
+      if (direction === "right") {
+            sliderList.appendChild(sliderList.firstElementChild);
+      } else {
+          sliderList.insertBefore(sliderList.lastElementChild, sliderList.firstElementChild);
+      }
+    }
   
   
  
