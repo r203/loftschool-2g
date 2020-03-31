@@ -1,0 +1,33 @@
+.navigation {
+    &__menu {
+        position: fixed;
+        top: 95px;
+        right: 50px;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style-type: none;
+        margin-bottom: 15px;
+        width: 6px;
+        height: 6px;
+        background-color: $nav-text;
+        border-radius: 50%;
+        &--active:before {
+            content: '';
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            background-color: transparent;
+            border: 1px solid $nav-text;
+            border-radius: 50%;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .navigation {
+        display: none;
+    }
+  }
